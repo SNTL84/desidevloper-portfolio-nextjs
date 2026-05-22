@@ -1,7 +1,11 @@
-<![CDATA[<p align="center">
-  <a href="https://desidevloper.com">
-    <img src="https://raw.githubusercontent.com/SNTL84/desidevloper-portfolio-nextjs/main/public/SNTL-84-banner.jpg" alt="SNTL 84 — desidevloper.com" width="100%" />
+<p align="center">
+  <a href="https://www.instagram.com/desibiztrade" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/SNTL84/desidevloper-portfolio-nextjs/main/public/SNTL-84-banner.jpg" alt="SNTL 84 — Follow @desibiztrade on Instagram" width="100%" />
   </a>
+</p>
+
+<p align="center">
+  <sub>☝️ Click the banner to follow <a href="https://www.instagram.com/desibiztrade"><strong>@desibiztrade</strong></a> on Instagram 📸</sub>
 </p>
 
 <h1 align="center">desidevloper.com — Next.js 14 Portfolio</h1>
@@ -12,13 +16,13 @@
 </p>
 
 <p align="center">
-  <a href="https://desidevloper.com"><img src="https://img.shields.io/badge/🌐_Website-desidevloper.com-c9a84c?style=for-the-badge" alt="Website"/></a>
-  <a href="https://wa.me/919727413309"><img src="https://img.shields.io/badge/💬_WhatsApp-Chat_Now-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
-  <a href="https://www.linkedin.com/in/sntl2784"><img src="https://img.shields.io/badge/🔗_LinkedIn-SNTL2784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/SNTL84"><img src="https://img.shields.io/badge/💻_GitHub-SNTL84-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://www.instagram.com/desibiztrade"><img src="https://img.shields.io/badge/📸_Instagram-@desibiztrade-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-  <a href="https://www.youtube.com/@SNTL84"><img src="https://img.shields.io/badge/🔴_YouTube-@SNTL84-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
-  <a href="https://aratt.ai/user/@desidevloper"><img src="https://img.shields.io/badge/🤖_Arrattai-@desidevloper-7c3aed?style=for-the-badge" alt="Arrattai"/></a>
+  <a href="https://desidevloper.com"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Website-desidevloper.com-c9a84c?style=for-the-badge" alt="Website"/></a>
+  <a href="https://wa.me/919727413309"><img src="https://img.shields.io/badge/%F0%9F%92%AC_WhatsApp-Chat_Now-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
+  <a href="https://www.linkedin.com/in/sntl2784"><img src="https://img.shields.io/badge/%F0%9F%94%97_LinkedIn-SNTL2784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/SNTL84"><img src="https://img.shields.io/badge/%F0%9F%92%BB_GitHub-SNTL84-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.instagram.com/desibiztrade"><img src="https://img.shields.io/badge/%F0%9F%93%B8_Instagram-%40desibiztrade-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://www.youtube.com/@SNTL84"><img src="https://img.shields.io/badge/%F0%9F%94%B4_YouTube-%40SNTL84-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="https://aratt.ai/user/@desidevloper"><img src="https://img.shields.io/badge/%F0%9F%A4%96_Arrattai-%40desidevloper-7c3aed?style=for-the-badge" alt="Arrattai"/></a>
 </p>
 
 <p align="center">
@@ -102,11 +106,11 @@ npm run build
 
 <table>
   <tr>
-    <td align="center" width="160">
+    <td align="center">
       <strong>SNTL 84 — Milan</strong><br/>
       <em>AI Workflow Pro & Full-Stack Builder 🇮🇳</em><br/><br/>
       🌐 <a href="https://desidevloper.com">desidevloper.com</a><br/>
-      💬 <a href="https://wa.me/919727413309">WhatsApp</a><br/>
+      💬 <a href="https://wa.me/919727413309">WhatsApp · +91 97274 13309</a><br/>
       🔗 <a href="https://www.linkedin.com/in/sntl2784">LinkedIn · sntl2784</a><br/>
       💻 <a href="https://github.com/SNTL84">GitHub · SNTL84</a><br/>
       📸 <a href="https://www.instagram.com/desibiztrade">Instagram · @desibiztrade</a><br/>
@@ -120,4 +124,3 @@ npm run build
 > *One Partner. Endless Possibilities. Real Growth.*
 
 © 2026 SNTL84 · [desidevloper.com](https://desidevloper.com) · All rights reserved
-]]>
