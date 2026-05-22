@@ -1,33 +1,57 @@
-# desidevloper.com — Next.js 14 Portfolio
+<![CDATA[<p align="center">
+  <a href="https://desidevloper.com">
+    <img src="https://raw.githubusercontent.com/SNTL84/desidevloper-portfolio-nextjs/main/public/SNTL-84-banner.jpg" alt="SNTL 84 — desidevloper.com" width="100%" />
+  </a>
+</p>
 
-> Built for founders who move fast, automate smart, and waste nothing.
+<h1 align="center">desidevloper.com — Next.js 14 Portfolio</h1>
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://typescriptlang.org)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-10-purple?style=for-the-badge)](https://framer.com/motion)
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+<p align="center">
+  <strong>Systems that Scale. Results that Last. Growth that Compounds.</strong><br/>
+  Built for founders who <strong>move fast</strong>, <strong>automate smart</strong>, and <strong>waste nothing</strong>.
+</p>
+
+<p align="center">
+  <a href="https://desidevloper.com"><img src="https://img.shields.io/badge/🌐_Website-desidevloper.com-c9a84c?style=for-the-badge" alt="Website"/></a>
+  <a href="https://wa.me/919727413309"><img src="https://img.shields.io/badge/💬_WhatsApp-Chat_Now-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
+  <a href="https://www.linkedin.com/in/sntl2784"><img src="https://img.shields.io/badge/🔗_LinkedIn-SNTL2784-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/SNTL84"><img src="https://img.shields.io/badge/💻_GitHub-SNTL84-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.instagram.com/desibiztrade"><img src="https://img.shields.io/badge/📸_Instagram-@desibiztrade-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://www.youtube.com/@SNTL84"><img src="https://img.shields.io/badge/🔴_YouTube-@SNTL84-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+  <a href="https://aratt.ai/user/@desidevloper"><img src="https://img.shields.io/badge/🤖_Arrattai-@desidevloper-7c3aed?style=for-the-badge" alt="Arrattai"/></a>
+</p>
+
+<p align="center">
+  <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" alt="Next.js"/></a>
+  <a href="https://typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript"/></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS"/></a>
+  <img src="https://img.shields.io/badge/Framer_Motion-10-purple?style=for-the-badge" alt="Framer Motion"/>
+  <a href="https://vercel.com"><img src="https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel"/></a>
+</p>
+
+---
 
 ## 🚀 Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
-- **Styling**: TailwindCSS + custom gold theme
-- **Animations**: Framer Motion
+- **Styling**: TailwindCSS + custom gold theme (`#c9a84c`)
+- **Animations**: Framer Motion + Canvas StarBackground
 - **Icons**: react-icons
-- **Contact**: EmailJS (plug in your keys)
-- **Deploy**: Vercel
+- **Contact**: EmailJS (env-var driven)
+- **Deploy**: Vercel + GitHub Actions CI/CD
 
 ## 📁 Structure
 
 ```
 desidevloper-portfolio-nextjs/
-├── app/              # Next.js App Router
+├── app/              # Next.js App Router (layout, page, globals.css)
 ├── components/
-│   └── main/         # Navbar, Hero, Aboutme, Skills, Projects, Contactform, Footer
+│   └── main/         # Navbar, Hero, Aboutme, Skills, Projects, Contactform, Footer, StarBackground
 ├── constants/        # Nav links, skills, services, social links, projects
 ├── utils/            # Framer Motion variants
-└── public/           # Images / assets
+├── public/           # Banner image & assets
+└── .github/workflows # Vercel CI/CD pipeline
 ```
 
 ## ⚡ Quick Start
@@ -46,28 +70,54 @@ Open [http://localhost:3000](http://localhost:3000)
 | Section | Description |
 |---|---|
 | **Navbar** | Fixed, scroll-aware, mobile-responsive, Hire Me CTA |
-| **Hero** | Animated heading, desidevloper 🇮🇳, tagline, social icons |
+| **Hero** | Animated `desidevloper 🇮🇳` heading, tagline, social icons |
 | **About** | Bio, stats (50+ projects), 4 service cards |
 | **Skills** | Tech stack grid with animated skill-level bars |
-| **Projects** | 6 real projects from your GitHub, featured badges |
-| **Contact** | Direct links + EmailJS contact form |
+| **Projects** | 6 real projects from SNTL84 GitHub, featured badges |
+| **Contact** | Direct links + fully wired EmailJS form |
 | **Footer** | Brand credits, social links, © 2026 SNTL84 |
+| **StarBackground** | 180 gold particles + shooting stars canvas animation |
 
 ## 📧 EmailJS Setup
 
 1. Sign up at [emailjs.com](https://emailjs.com)
-2. Get `SERVICE_ID`, `TEMPLATE_ID`, `PUBLIC_KEY`
-3. Update `components/main/Contactform.tsx` → `handleSubmit`
+2. Copy `.env.local.example` → `.env.local`
+3. Fill in `NEXT_PUBLIC_EMAILJS_SERVICE_ID`, `TEMPLATE_ID`, `PUBLIC_KEY`
 
-## 🌐 Deploy
+## ⚙️ CI/CD — Vercel Auto Deploy
+
+Every push to `main` → lint → build → deploy to [desidevloper.com](https://desidevloper.com)
+
+Add these 3 secrets to **GitHub → Repo Settings → Secrets → Actions**:
+- `VERCEL_TOKEN` · `VERCEL_ORG_ID` · `VERCEL_PROJECT_ID`
 
 ```bash
 npm run build
-# Push to GitHub → connect to Vercel → auto-deploy
+# Push to main → GitHub Actions → Vercel Production ✅
 ```
 
 ---
 
-**Built by [SNTL84](https://github.com/SNTL84)** · [desidevloper.com](https://desidevloper.com) · [LinkedIn](https://www.linkedin.com/in/sntl2784) · [WhatsApp](https://wa.me/919727413309) · [Arrattai](https://aratt.ai/user/@desidevloper)
+## 👤 Built By
 
-© 2026 SNTL84 · All rights reserved
+<table>
+  <tr>
+    <td align="center" width="160">
+      <strong>SNTL 84 — Milan</strong><br/>
+      <em>AI Workflow Pro & Full-Stack Builder 🇮🇳</em><br/><br/>
+      🌐 <a href="https://desidevloper.com">desidevloper.com</a><br/>
+      💬 <a href="https://wa.me/919727413309">WhatsApp</a><br/>
+      🔗 <a href="https://www.linkedin.com/in/sntl2784">LinkedIn · sntl2784</a><br/>
+      💻 <a href="https://github.com/SNTL84">GitHub · SNTL84</a><br/>
+      📸 <a href="https://www.instagram.com/desibiztrade">Instagram · @desibiztrade</a><br/>
+      🔴 <a href="https://www.youtube.com/@SNTL84">YouTube · @SNTL84</a><br/>
+      🤖 <a href="https://aratt.ai/user/@desidevloper">Arrattai · @desidevloper</a><br/>
+      📧 <a href="mailto:3goldenlotusroots@gmail.com">3goldenlotusroots@gmail.com</a>
+    </td>
+  </tr>
+</table>
+
+> *One Partner. Endless Possibilities. Real Growth.*
+
+© 2026 SNTL84 · [desidevloper.com](https://desidevloper.com) · All rights reserved
+]]>
