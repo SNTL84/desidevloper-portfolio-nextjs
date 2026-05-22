@@ -1,18 +1,37 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from '@/utils/motion';
 import { FaWhatsapp, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
+type FormState = 'idle' | 'sending' | 'sent' | 'error';
+
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<FormState>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Wire up EmailJS here: emailjs.send('SERVICE_ID', 'TEMPLATE_ID', form, 'PUBLIC_KEY')
-    setSent(true);
-    setForm({ name: '', email: '', message: '' });
+    setStatus('sending');
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+          to_name: 'SNTL84',
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setStatus('sent');
+      setForm({ name: '', email: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -80,9 +99,14 @@ export default function ContactForm() {
             onSubmit={handleSubmit}
             className="space-y-4"
           >
-            {sent && (
+            {status === 'sent' && (
               <div className="p-4 rounded-xl bg-gold/10 border border-gold/30 text-gold text-sm font-semibold">
                 ✅ Message sent! I&apos;ll get back to you within 24 hours.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-semibold">
+                ❌ Something went wrong. Please try WhatsApp instead.
               </div>
             )}
             <motion.input
@@ -115,11 +139,12 @@ export default function ContactForm() {
             <motion.button
               variants={fadeInRight}
               type="submit"
-              whileHover={{ scale: 1.02 }}
+              disabled={status === 'sending'}
+              whileHover={{ scale: status === 'sending' ? 1 : 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-3 bg-gold text-black font-bold rounded-xl hover:bg-gold-light transition-all duration-200 text-sm"
+              className="w-full py-3 bg-gold text-black font-bold rounded-xl hover:bg-gold-light transition-all duration-200 text-sm disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Send Message 🚀
+              {status === 'sending' ? 'Sending...' : 'Send Message 🚀'}
             </motion.button>
           </motion.form>
         </div>
